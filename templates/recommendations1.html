@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>DiseaseLens.com</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+       <!--css -->
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/animate.min.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.css.map') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css.map') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap-grid.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap-grid.css.map') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap-grid.min.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap-grid.min.css.map') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/boostrap-reboot.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap-grid.min.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/boostrap-reboot.min.css.map') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/default-skin.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/font-awesome.min.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/icomoon.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/jquery.fancybox.min') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/jquery.mCustomScrollbar.min.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/jquery-ui.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/meanmenu.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/nice-select.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/normalize.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/owl.carousel.min.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/responsive.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/slick.css') }}">
+
+        <!-- images-->
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/banner.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/banner1.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/body_bg.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/bottom.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/box_img.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/business_img.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/diseaselens_logo.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/healthy_lifestyle.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/healthy_living.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/dllogo.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/loading.gif') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/logo.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/menu_icon.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/midil.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/plan1.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/projects_img.png') }}">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='images/test.png') }}">
+
+
+
+
+
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+      <!-- loader  -->
+
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <section>
+         <div  class="formheader">
+            <div class="header">
+               <div class="">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="">
+                           <div class="">
+                              <div class="logo" >
+                                 <a href="la.html"><img src="{{ url_for('static',filename='images/dllogo.png') }}" alt="#" width="300" height="50" /></a>
+                                 <!-- <a href="index.html"><img src="images/dllogo.png" alt="#" width="300" height="50" /></a> -->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9" >
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              <ul class="navbar-nav mr-auto">
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="index.html" margin-Top="30"> Home  </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="index.html">About</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Contact</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+            </section>
+      </header>
+
+<!-- Disease that may affect you in future -->
+      <section>
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Diseases that may affect you in future</h2>
+                     <span> </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 ">
+                  <form class="main_form ">
+                     <div class="row">
+<br></div>
+
+<div class="card-deck">
+
+    <div class="card">
+    <img class="card-img-top" src="https://images.sandesh.com/2021/09/Alzheimer.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><strong><center>ALZHEIMERS' DISEASE</center></strong></h5>
+  </div>
+</div>
+
+
+  <div class="card">
+    <img class="card-img-top" src="https://new-img.patrika.com/upload/2018/09/03/heart_attack.jpg" alt="Card image cap" >
+    <div class="card-body" >
+        <h5 class="card-title"><strong><center>HEART RELATED DISEASE</center></strong></h5>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8XD8exaLrZMpfE44NtniLwXa76z6LtRI7lL3hveQ5le3LPPVEjsOFIsVESgjHR-oQ8So&usqp=CAU" alt="Card image cap" style="max-height: 15em">
+    <div class="card-body">
+      <h5 class="card-title"><strong><center>BLOOD PRESSURE</center></strong></h5>
+    </div>
+  </div>
+
+
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      </section>
+
+
+<!-- Lifestyle Analyser -->
+      <section>
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <!-- <h2>Lifestyle Analyser</h2><br/><br/> -->
+                     <h2>Recommendations</h2>
+                     <span> </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 ">
+                  <form class="main_form ">
+                     <div class="row">
+
+
+<br></div>
+
+
+
+
+
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://new-img.patrika.com/upload/2018/10/14/sleeping.jpg" alt="Card image cap" >
+    <div class="card-body">
+      <h5 class="card-title"><strong>SLEEP</strong></h5>
+      <p class="card-text">Fix your sleep schedule.</p>
+      <p class="card-text">For 8-9 hrs</p>
+    </div>
+
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://www.brewer-world.com/wp-content/uploads/2020/03/No-alcohol-1920x1080-1-1.jpg" alt="Card image cap" style="max-height: 15em">
+    <div class="card-body">
+      <h5 class="card-title"><strong>NO ALCOHOL</strong></h5>
+      <p class="card-text">Reduce your alcohol intake gradually.</p>
+<!--      <p class="card-text">For Eg: Spinach.</p>-->
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="https://st2.depositphotos.com/1570716/12226/i/950/depositphotos_122264766-stock-photo-stop-eating-unhealthy-junk-food.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><strong>STOP EATING JUNK</strong></h5>
+      <p class="card-text">Improve your healthy eating habits.</p>
+      <p class="card-text">For Eg: Add more fruits.<p>
+
+  </div>
+</div>
+
+
+
+                        <div class="col-sm-12">
+                        <a href="http://127.0.0.1:5000/" target="_blank" style="margin-left: 27em; margin-top: 4em">HOME</a>
+                        </div>
+
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 ">
+                     <br></br></div>
+                  </div>
+                  <div class="col-md-12">
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>Copyright 2022 All Right Reserved By DiseaseLens</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
+</html>
+
+<style>
+   .formheader{
+      background-color: #007bff;
+   }
+   .send_btn{
+    text-decoration-color: white;
+   }
+   a:link, a:visited {
+      background-color: #007bff;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+  }
+
+  a:hover, a:active {
+    background-color: blue;
+  }
+
+</style>
